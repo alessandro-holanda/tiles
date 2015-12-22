@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'metro';
+  src: url('fonts/metro.eot?izvoei');
+  src: url('fonts/metro.eot?#iefixizvoei') format('embedded-opentype'), url('fonts/metro.woff?izvoei') format('woff'), url('fonts/metro.ttf?izvoei') format('truetype'), url('fonts/metro.svg?izvoei#metro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="mif-"],
+[class*=" mif-"] {
+  display: inline-block;
+  font: normal normal normal 1.5em/1;
+  font-family: metro, "Segoe UI", "Open Sans", serif;
+  line-height: 1 ;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  vertical-align: middle;
+  position: static;
+}
+[class^="mif-"]:before,
+[class*=" mif-"]:before {
+  font-family: metro, serif;
+}
+
+html, body, * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", "Open Sans", sans-serif, serif;
+    font-size: 0.875rem;
+    line-height: 1.1;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (max-width: 640px)
+.tile-container {
+    width: 100%;
+}
+.bg-darkCobalt {
+    background: #00356a !important;
+}
+.tile-small, .tile, .tile-square, .tile-wide, .tile-large, .tile-big, .tile-super {
+    overflow: visible;
+}
+.tile {
+    width: 150px;
+    height: 150px;
+    display: block;
+    float: left;
+    margin: 5px;
+    background-color: #eeeeee;
+    box-shadow: inset 0 0 1px #FFFFCC;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.tile-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.tile {
+    width: 150px;
+    height: 150px;
+    display: block;
+    float: left;
+    margin: 5px;
+    background-color: #eeeeee;
+    box-shadow: inset 0 0 1px #FFFFCC;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tile-container:after {
+    clear: both;
+}
+.tile-container:before, .tile-container:after {
+    display: table;
+    content: "";
+}
+.tile.bg-green.fg-white.element-selected {
+    border: 4px #4390df solid;
+}
+@media screen and (max-width: 800px)
+.tile {
+    width: 120px;
+    height: 120px;
+}
+.element-selected {
+    border: 4px #4390df solid;
+    border-radius: 0px 10px 0px 55px;
+}
+.fg-white {
+    color: #ffffff !important;
+}
+.bg-green {
+    background: #60a917 !important;
+}
+
+.tile-content.iconic .icon {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+  top: 50%;
+  margin-top: -40px;
+  left: 50%;
+  margin-left: -32px;
+  text-align: center;
+}
+
+/* metro.css:3155 */
+.element-selected:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: transparent;
+    border-color: #ffffff;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    height: .25rem;
+    width: .5rem;
+    right: 3px;
+    top: 3px;
+    z-index: 102;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* metro-icons.css:2962 */
+.element-selected:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: transparent;
+    border-color: #ffffff;
+    border-left: 2px solid;
+    /* border-bottom: 2px solid; */
+    height: .25rem;
+    /* width: .5rem; */
+    /* right: 0; */
+    /* top: 0; */
+    /* z-index: 102; */
+    /* -webkit-transform: rotate(-45deg); */
+    /* transform: rotate(-45deg); */
+}
+
+/* metro.css:3145 */
+.element-selected:after {
+    position: absolute;
+    display: none;
+    border-top: 28px solid #4390df;
+    border-left: 28px solid transparent;
+    right: 0;
+    content: "";
+    top: 0;
+    z-index: 101;
+}
+
+.element-selected:focus {
+    display: none;
+}
+/* metro-icons.css:2950 */
+.element-selected:after {
+    position: absolute;
+    border-top: 20px solid #4390df;
+    border-left: 25px solid #128023;
+    border-bottom-left-radius: 8px;
+    box-shadow: -3px 0px 1px -2px;
+    padding: 6px;
+    content: "";
+    top: 0px;
+    z-index: 101;
+    display: block;
+}
+.tile .tile-label {
+    position: absolute;
+    bottom: 5px;
+    right: .5rem;
+    padding: .1rem .1rem;
+    /* z-index: 999; */
+    /* text-align: center; */
+}
+
+.mif-home:before {
+    content: "\e900";
+}
+[class^="mif-"]:before, [class*=" mif-"]:before {
+    font-family: metro, serif;
+}
+
+.tip::before {
+    color: black;
+    content: "type text here";
+}
+.tip::after {
+    color: black;
+    content: "thanks";
+}
+
+input[type="text"]:focus {
+    background-color: #FFFFCC;
+    color: blue;
+}
+
+/* ----------------------------------   CSS tips and trics  ------------------------------------ */
+
+/* select only links ends with .pdf */
+a[href$=".pdf"] {
+background: url(doc_icon.png) no-repeat;
+padding-left: 15px;
+};
